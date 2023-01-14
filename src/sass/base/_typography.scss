@@ -16,7 +16,7 @@ body {
         display: block;
         font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
+        letter-spacing: 2rem;
         animation: moveInLeft 1s ease-in;
 
         @include respond(phone) {
@@ -27,9 +27,9 @@ body {
 
     &--sub {
         display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
+        font-size: 2.75rem;
+        font-weight: 300;
+        letter-spacing: .75rem;
         animation: moveInRight 1s ease-in;
 
         @include respond(phone) {
@@ -43,7 +43,7 @@ body {
     text-transform: uppercase;
     font-weight: 900;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

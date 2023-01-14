@@ -1,12 +1,13 @@
-import "./HomePage.scss";
+import "./HomePage.scss"
 
-function HomePage() {
+import Header from "../../components/Header/Header"
+
+const HomePage = () => {
   return (
-
-    <header className="header">
-
-    </header>
-  );
+    <>
+      <Header />
+    </>
+  )
 }
 
-export default HomePage;
+export default HomePage

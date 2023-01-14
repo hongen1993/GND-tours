@@ -1,0 +1,36 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+
+.header {
+    height: 82.5vh;
+    background-image: linear-gradient(to right top,
+            rgba($color-black, 0.2),
+            rgba($color-black, 0.2)),
+        url(../../assets/images/Alhambra/alhambra-6.jpg);
+    background-size: cover;
+    background-position: top;
+
+    border: 1px solid $color-secondary-light;
+
+    @supports(clip-path:polygon(0 0)) or (-webkit-clip-path:polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        height: 95vh;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 5.5rem;
+        left: 5.5rem;
+    }
+
+    &__logo {
+        height: 7.5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        @include center-vertical;
+        text-align: center;
+    }
+}

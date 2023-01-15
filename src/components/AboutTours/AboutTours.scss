@@ -24,7 +24,7 @@
 
         &--p1 {
             left: -1rem;
-            top: -2rem;
+            top: -.5rem;
 
             @include respond(tab-port) {
                 top: 0;

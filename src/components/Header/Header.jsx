@@ -18,7 +18,7 @@ const Header = () => {
                     <span className="heading-primary--main">Granada</span>
                     <span className="heading-primary--sub">A jewel in the Andalucian crown</span>
                 </h1>
-                <Button>Visita Granada</Button>
+                <Button>Visit Granada</Button>
             </div>
         </header >
     )

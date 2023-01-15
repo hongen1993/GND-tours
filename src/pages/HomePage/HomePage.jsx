@@ -2,6 +2,7 @@ import "./HomePage.scss"
 
 import Header from "../../components/Header/Header"
 import AboutTours from "../../components/AboutTours/AboutTours"
+import Features from "../../components/Features/Features"
 
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Header />
       <main>
         <AboutTours />
+        <Features />
       </main>
     </>
   )

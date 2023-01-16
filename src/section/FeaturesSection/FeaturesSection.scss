@@ -1,0 +1,21 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+
+.section-features {
+    margin-top: -10rem;
+    padding: 20rem 0;
+    background-image: linear-gradient(to right top,
+            rgba($color-primary, 0.1),
+            rgba($color-primary-dark, 0.3)),
+        url(../../assets/images/Sierra/sierra-nevada-skew.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    &>* {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}

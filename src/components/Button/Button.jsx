@@ -1,10 +1,12 @@
 import "./Button.scss"
 
-const Button = ({ children }) => {
+import { Link } from "react-router-dom";
+
+const Button = ({ link, color, children }) => {
     return (
-        <a href="#section-tours" className="btn btn--white btn--animated">
+        <Link href={link} className={`btn btn--${color} btn--animated`}>
             {children}
-        </a>
+        </Link>
     )
 }
 

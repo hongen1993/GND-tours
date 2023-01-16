@@ -1,10 +1,9 @@
-import "./HomePage.scss"
-
 import HeaderSection from "../../section/HeaderSection/HeaderSection"
 import AboutToursSection from "../../section/AboutToursSection/AboutToursSection"
 import FeaturesSection from "../../section/FeaturesSection/FeaturesSection"
 import ToursSection from "../../section/ToursSection/ToursSection"
 import StoriesSection from "../../section/StoriesSection/StoriesSection"
+import BookSection from "../../section/BookSection/BookSection"
 
 const HomePage = () => {
   return (
@@ -15,6 +14,7 @@ const HomePage = () => {
         <FeaturesSection />
         <ToursSection />
         <StoriesSection />
+        <BookSection />
       </main>
     </>
   )

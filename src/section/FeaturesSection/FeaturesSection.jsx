@@ -1,3 +1,5 @@
+import "./FeaturesSection.scss"
+
 import { FaDiagnoses } from 'react-icons/fa'
 import { GiDiamondTrophy } from 'react-icons/gi'
 import { Ri24HoursFill } from 'react-icons/ri'
@@ -5,7 +7,9 @@ import { TbFileCertificate } from 'react-icons/tb'
 
 import FeatureBox from "../../components/FeatureBox/FeatureBox"
 
-const Features = () => {
+const FeaturesSection = () => {
+
+    const colSize = 'col-1-of-4'
 
     const iconA = <FaDiagnoses className="feature-box__icon" />
     const iconB = <GiDiamondTrophy className="feature-box__icon" />
@@ -25,16 +29,16 @@ const Features = () => {
     return (
         <section className="section-features" id="section-features">
             <div className="row">
-                <div className="col-1-of-4">
+                <div className={colSize}>
                     <FeatureBox icon={iconA} title={titleA} text={textA} />
                 </div>
-                <div className="col-1-of-4">
+                <div className={colSize}>
                     <FeatureBox icon={iconB} title={titleB} text={textB} />
                 </div>
-                <div className="col-1-of-4">
+                <div className={colSize}>
                     <FeatureBox icon={iconC} title={titleC} text={textC} />
                 </div>
-                <div className="col-1-of-4">
+                <div className={colSize}>
                     <FeatureBox icon={iconD} title={titleD} text={textD} />
                 </div>
             </div>
@@ -42,4 +46,4 @@ const Features = () => {
     )
 }
 
-export default Features
+export default FeaturesSection

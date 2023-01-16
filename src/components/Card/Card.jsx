@@ -1,5 +1,7 @@
 import "./Card.scss"
 
+import Button from "../Button/Button"
+
 const Card = ({ cardNumber, title, list, price }) => {
     return (
         <div className="card">
@@ -22,7 +24,7 @@ const Card = ({ cardNumber, title, list, price }) => {
                         <p className="card__price-only">Only</p>
                         <p className="card__price-value">{price}€</p>
                     </div>
-                    <a href="#popup" className="btn btn--white">Book now!</a>
+                    <Button color={'white'}>Book now!</Button>
                 </div>
             </div>
         </div>

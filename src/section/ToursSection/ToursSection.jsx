@@ -1,11 +1,18 @@
 import "./ToursSection.scss"
+
+import Heading from "../../components/Heading/Heading"
 import Card from "../../components/Card/Card"
+import Button from "../../components/Button/Button"
 
 const Tours = () => {
+
+    const sectionTitle = 'Choose your tour'
 
     const titleA = 'Patronage of Alhambra'
     const titleB = 'Sierra de Castril'
     const titleC = 'Sierra Nevada'
+
+    const colSize = 'col-1-of-3'
 
     const listA =
         <ul>
@@ -40,26 +47,23 @@ const Tours = () => {
     return (
         <section className="section-tours" id="section-tours">
             <div className="u-center-text u-margin-bottom-big">
-                <h2 className="heading-secondary">
-                    Choose your tour
-                </h2>
+                <Heading HeadingNum={'h2'} headingClass={'secondary'} children={sectionTitle} />
             </div>
             <div className="row">
-                <div className="col-1-of-3">
+                <div className={colSize}>
                     <Card cardNumber={card1} title={titleA} list={listA} price={priceA} />
                 </div>
-                <div className="col-1-of-3">
+                <div className={colSize}>
                     <Card cardNumber={card2} title={titleB} list={listB} price={priceB} />
                 </div>
-                <div className="col-1-of-3">
+                <div className={colSize}>
                     <Card cardNumber={card3} title={titleC} list={listC} price={priceC} />
                 </div>
             </div>
             <div className="u-center-text u-margin-top-huge">
-                <a href="#" className="btn btn--green">Discover all tours</a>
+                <Button color={'blue'}>Discover all tours</Button>
             </div>
         </section>
-
     )
 }
 

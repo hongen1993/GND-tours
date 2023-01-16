@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button"
 import gndLogo from "../../assets/logos/gnd-logo-white.png"
 
 import { Link } from "react-router-dom"
+import Heading from "../../components/Heading/Heading"
 
 const Header = () => {
     return (
@@ -14,11 +15,11 @@ const Header = () => {
                 </Link>
             </div>
             <div className="header__text-box">
-                <h1 className="heading-primary">
+                <Heading HeadingNum={'h1'} headingClass={'primary'}>
                     <span className="heading-primary--main">Granada</span>
                     <span className="heading-primary--sub">A jewel in the Andalucian crown</span>
-                </h1>
-                <Button>Visit Granada</Button>
+                </Heading>
+                <Button color={'white'}>Visit Granada</Button>
             </div>
         </header >
     )

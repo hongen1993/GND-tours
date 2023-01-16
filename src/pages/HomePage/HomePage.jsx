@@ -1,17 +1,20 @@
 import "./HomePage.scss"
 
-import Header from "../../components/Header/Header"
-import AboutTours from "../../components/AboutTours/AboutTours"
-import Features from "../../components/Features/Features"
-
+import HeaderSection from "../../section/HeaderSection/HeaderSection"
+import AboutToursSection from "../../section/AboutToursSection/AboutToursSection"
+import FeaturesSection from "../../section/FeaturesSection/FeaturesSection"
+import ToursSection from "../../section/ToursSection/ToursSection"
+import StoriesSection from "../../section/StoriesSection/StoriesSection"
 
 const HomePage = () => {
   return (
     <>
-      <Header />
+      <HeaderSection />
       <main>
-        <AboutTours />
-        <Features />
+        <AboutToursSection />
+        <FeaturesSection />
+        <ToursSection />
+        <StoriesSection />
       </main>
     </>
   )

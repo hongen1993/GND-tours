@@ -1,4 +1,4 @@
-import "./AboutTours.scss"
+import "./AboutToursSection.scss"
 
 import photoA from "../../assets/images/Alhambra/alhambra-3.jpg"
 import photoB from "../../assets/images/Bosque/bosque-1.jpeg"
@@ -16,7 +16,7 @@ const AboutTours = () => {
             </div>
             <div className="row">
                 <div className="col-1-of-2">
-                    <h3 className="heading-tertiary u-margin-bottom-small">Discover its history</h3>
+                    <h3 className="heading-tertiary u-margin-bottom-small">Discover the history behind</h3>
                     <p className="paragraph">
                         {/* Increasingly we believe the world needs more meaningful,
                         real-life connections between curious travellers keen to explore the world in a more responsible way.

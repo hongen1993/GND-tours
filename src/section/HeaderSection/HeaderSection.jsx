@@ -1,6 +1,6 @@
-import "./Header.scss"
+import "./HeaderSection.scss"
 
-import Button from "../Button/Button"
+import Button from "../../components/Button/Button"
 import gndLogo from "../../assets/logos/gnd-logo-white.png"
 
 import { Link } from "react-router-dom"

@@ -51,7 +51,7 @@ function Navbar() {
 
             <div className="navbar__background">&nbsp;</div>
 
-            <nav className="navigation__nav">
+            <nav className="navbar__nav">
               <ul className="navbar__list">
                 <li className="navbar__item"><Link to="/" className="navbar__link">Home</Link></li>
                 <li className="navbar__item"><Link to="/login" className="navbar__link">Login</Link></li>

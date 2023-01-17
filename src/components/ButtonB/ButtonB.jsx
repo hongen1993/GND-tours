@@ -1,10 +1,10 @@
 import "./ButtonB.scss"
 
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const ButtonB = ({ link, children }) => {
     return (
-        <Link to={link} className="btn-text" >{children}&rarr;</Link >
+        <HashLink to={link} className="btn-text" >{children}&rarr;</HashLink >
     )
 }
 

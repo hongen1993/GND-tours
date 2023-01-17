@@ -2,7 +2,6 @@ import "./AboutToursSection.scss"
 
 import Heading from "../../components/Heading/Heading"
 import Paragraph from "../../components/Paragraph/Paragraph"
-import ButtonB from "../../components/ButtonB/ButtonB"
 import Image from "../../components/Image/Image"
 
 import photoA from "../../assets/images/Bosque/bosque-1.jpeg"
@@ -20,6 +19,7 @@ const AboutTours = () => {
     const paragraph2 =
         'Is home to a few prized natural parks where you can see winters beauty, the snow in Sierra Nevada or enjoy challenging trails in Sierra de Castril, no doubt they deserve to be in any traveler"s bucket list.'
 
+    const buttonLink = 'https://www.lovegranada.com/granada/'
     const buttonBText = 'Learn more '
 
     const imageAAlt = 'Forest'
@@ -39,7 +39,7 @@ const AboutTours = () => {
                     <Heading HeadingNum={'h3'} headingClass={"tertiary u-margin-bottom-small"} children={colTitleB} />
                     <Paragraph paragraphText={paragraph2} />
 
-                    <ButtonB children={buttonBText} />
+                    <a className="btn-text" href={buttonLink} target="_blank" rel="noopener noreferrer">{buttonBText}&rarr;</a>
                 </div>
                 <div className="col-1-of-2">
                     <div className="composition">

@@ -4,6 +4,7 @@ import FeaturesSection from "../../section/FeaturesSection/FeaturesSection"
 import ToursSection from "../../section/ToursSection/ToursSection"
 import StoriesSection from "../../section/StoriesSection/StoriesSection"
 import BookSection from "../../section/BookSection/BookSection"
+import FooterSection from "../../section/FooterSection/FooterSection"
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
         <StoriesSection />
         <BookSection />
       </main>
+      <FooterSection />
     </>
   )
 }

@@ -5,7 +5,7 @@ import Button from "../../components/Button/Button"
 
 const BookSection = () => {
 
-    const sectionTitle = 'Start booking now'
+    const sectionTitle = 'Contact us'
 
     const fGroup = 'form__group'
     const fInput = 'form__input'
@@ -42,13 +42,13 @@ const BookSection = () => {
                                     <input type={rd} className={fRInput} id="small" name="size" />
                                     <label for="small" className={fRLabel}>
                                         <span className={fRButton}></span>
-                                        Small tour group</label>
+                                        Tour information</label>
                                 </div>
                                 <div className={fRGroup}>
                                     <input type={rd} className={fRInput} id="large" name="size" />
                                     <label for="large" className={fRLabel}>
                                         <span className={fRButton}></span>
-                                        Large tour group</label>
+                                        Book tour</label>
                                 </div>
                             </div>
                             <div className={fGroup}>

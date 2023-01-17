@@ -1,12 +1,12 @@
 import "./Button.scss"
 
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const Button = ({ link, color, children }) => {
     return (
-        <Link href={link} className={`btn btn--${color} btn--animated`}>
+        <HashLink to={link} className={`btn btn--${color} btn--animated`}>
             {children}
-        </Link>
+        </HashLink>
     )
 }
 

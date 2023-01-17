@@ -3,6 +3,9 @@ import "./Card.scss"
 import Button from "../Button/Button"
 
 const Card = ({ cardNumber, title, list, price }) => {
+
+    const buttonLink = '#section-book'
+
     return (
         <div className="card">
             <div className="card__side card__side--front">
@@ -24,7 +27,7 @@ const Card = ({ cardNumber, title, list, price }) => {
                         <p className="card__price-only">Only</p>
                         <p className="card__price-value">{price}€</p>
                     </div>
-                    <Button color={'white'}>Book now!</Button>
+                    <Button link={buttonLink} color={'white'}>Book now!</Button>
                 </div>
             </div>
         </div>

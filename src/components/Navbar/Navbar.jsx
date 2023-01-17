@@ -2,11 +2,26 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth.context";
+import NavbarItem from "../NavbarItem/NavbarItem";
 
 function Navbar() {
   // Subscribe to the AuthContext to gain access to
   // the values from AuthContext.Provider's `value` prop
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
+
+  const listLink1 = '#section-header'
+  const listLink2 = '#section-features'
+  const listLink3 = '#section-tours'
+  const listLink4 = '#section-stories'
+  const listLink5 = '#section-stories'
+  const listLink6 = '#section-stories'
+
+  const listText1 = 'Home'
+  const listText2 = 'About us'
+  const listText3 = 'Tours'
+  const listText4 = 'Stories'
+  const listText5 = 'Privacy policy'
+  const listText6 = 'Terms'
 
   return (
     <nav>
@@ -22,11 +37,12 @@ function Navbar() {
 
             <nav className="navbar__nav">
               <ul className="navbar__list">
-                <li className="navbar__item"><Link to="/" className="navbar__link">Home</Link></li>
-                <li className="navbar__item"><Link to="/profile" className="navbar__link">Profile</Link></li>
-                <li className="navbar__item"><Link to="#section-about" className="navbar__link">About GND Tours</Link></li>
-                <li className="navbar__item"><Link to="#section-tours" className="navbar__link">Our tours</Link></li>
-                <li className="navbar__item"><Link to="#section-book" className="navbar__link">Book now</Link></li>
+                <NavbarItem navLink={listLink1} children={listText1} />
+                <NavbarItem navLink={listLink2} children={listText2} />
+                <NavbarItem navLink={listLink3} children={listText3} />
+                <NavbarItem navLink={listLink4} children={listText4} />
+                <NavbarItem navLink={listLink5} children={listText5} />
+                <NavbarItem navLink={listLink6} children={listText6} />
               </ul>
             </nav>
           </div>
@@ -53,11 +69,12 @@ function Navbar() {
 
             <nav className="navbar__nav">
               <ul className="navbar__list">
-                <li className="navbar__item"><Link to="/" className="navbar__link">Home</Link></li>
-                <li className="navbar__item"><Link to="/login" className="navbar__link">Login</Link></li>
-                <li className="navbar__item"><Link to="#section-about" className="navbar__link">About GND Tours</Link></li>
-                <li className="navbar__item"><Link to="#section-tours" className="navbar__link">Our tours</Link></li>
-                <li className="navbar__item"><Link to="#section-book" className="navbar__link">Book now</Link></li>
+                <NavbarItem navLink={listLink1} children={listText1} />
+                <NavbarItem navLink={listLink2} children={listText2} />
+                <NavbarItem navLink={listLink3} children={listText3} />
+                <NavbarItem navLink={listLink4} children={listText4} />
+                <NavbarItem navLink={listLink5} children={listText5} />
+                <NavbarItem navLink={listLink6} children={listText6} />
               </ul>
             </nav>
           </div>

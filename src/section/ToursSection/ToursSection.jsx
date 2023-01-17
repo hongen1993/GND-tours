@@ -44,6 +44,8 @@ const Tours = () => {
     const card2 = 2
     const card3 = 3
 
+    const buttonLink = '#section-book'
+
     return (
         <section className="section-tours" id="section-tours">
             <div className="u-center-text u-margin-bottom-big">
@@ -61,7 +63,7 @@ const Tours = () => {
                 </div>
             </div>
             <div className="u-center-text u-margin-top-huge">
-                <Button color={'blue'}>Discover all tours</Button>
+                <Button link={buttonLink} color={'blue'}>Contact us!</Button>
             </div>
         </section>
     )

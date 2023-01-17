@@ -11,10 +11,10 @@
 }
 
 .book {
-    background-image: linear-gradient(105deg, rgba($color-white, .9)0%, rgba($color-white, .9)50%, transparent 50%),
-        // url(../../img/nat-10.jpg)
-    ;
+    background-image: linear-gradient(105deg, rgba($color-white, .8)0%, rgba($color-white, .8)50%, transparent 50%),
+        url(../../assets/images/Sierra/sierra-nevada-9.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 

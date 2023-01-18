@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth.context";
 import NavbarItem from "../NavbarItem/NavbarItem";
@@ -9,12 +9,12 @@ function Navbar() {
   // the values from AuthContext.Provider's `value` prop
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
-  const listLink1 = '#section-header'
-  const listLink2 = '#section-features'
-  const listLink3 = '#section-tours'
-  const listLink4 = '#section-stories'
-  const listLink5 = '#section-stories'
-  const listLink6 = '#section-stories'
+  const listLink1 = 'section-header'
+  const listLink2 = 'section-features'
+  const listLink3 = 'section-tours'
+  const listLink4 = 'section-stories'
+  const listLink5 = 'section-stories'
+  const listLink6 = 'section-stories'
 
   const listText1 = 'Home'
   const listText2 = 'About us'

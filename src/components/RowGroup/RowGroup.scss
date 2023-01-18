@@ -1,0 +1,17 @@
+.row-group {
+    transition: all 1s;
+}
+
+.inactive {
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    animation: fadeOut 1.3s linear;
+    animation-fill-mode: forwards;
+}
+
+.active {
+    position: absolute;
+    animation: fadeIn 2.6s linear;
+    animation-fill-mode: forwards;
+}

@@ -44,7 +44,7 @@ const Terms = () => {
     return (
         <div class="popup" id="popup">
             <div class="popup__content">
-                <a href="#section-tours" class="popup__close">&times;</a>
+                <a href="#" class="popup__close">&times;</a>
 
                 <Heading HeadingNum={'h2'} headingClass={'tertiary'} children={heading1Text} />
                 {text1}

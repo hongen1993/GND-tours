@@ -33,7 +33,7 @@ const Tours = () => {
             <li>5 day tour</li>
             <li>Up to 5 people</li>
             <li>Ski, snowboard, russian sleigh and much more!</li>
-            <li>Vicer'di Roi Resort</li>
+            <li>Vicer'di Roi Resort 5 Stars</li>
         </ul>
 
     const priceA = '199'

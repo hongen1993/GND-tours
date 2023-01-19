@@ -14,7 +14,7 @@ function Navbar() {
   const listLink3 = 'section-tours'
   const listLink4 = 'section-stories'
   const listLink5 = 'section-book'
-  const listLink6 = '#'
+  const listLink6 = '#popup'
 
   const listText1 = 'Home'
   const listText2 = 'About us'

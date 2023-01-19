@@ -8,16 +8,16 @@ const FooterSection = () => {
     const listLink1 = '#section-header'
     const listLink2 = '#section-features'
     const listLink3 = '#section-tours'
-    const listLink4 = '#section-stories'
+    const listLink4 = '#section-book'
     const listLink5 = '#section-stories'
-    const listLink6 = '#section-stories'
+    const listLink6 = '#popup'
 
     const listText1 = 'Home'
     const listText2 = 'About us'
     const listText3 = 'Tours'
     const listText4 = 'Stories'
-    const listText5 = 'Privacy policy'
-    const listText6 = 'Terms'
+    const listText5 = 'Book now'
+    const listText6 = 'Privacy policy'
 
     return (
         <footer className="footer">
@@ -38,7 +38,7 @@ const FooterSection = () => {
                             <FooterItem listLink={listLink2} listText={listText2} />
                             <FooterItem listLink={listLink3} listText={listText3} />
                             <FooterItem listLink={listLink4} listText={listText4} />
-                            <li className="footer__item"><a href={listLink5} className="footer__link">{listText5}</a></li>
+                            <FooterItem listLink={listLink5} listText={listText5} />
                             <li className="footer__item"><a href={listLink6} className="footer__link">{listText6}</a></li>
                         </ul>
                     </div>

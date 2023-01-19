@@ -20,15 +20,13 @@
 
     @include respond(tab-land) {
         background-image: linear-gradient(105deg, rgba($color-white, .9)0%, rgba($color-white, .9)65%, transparent 65%),
-            // url(../../img/nat-10.jpg)
-        ;
+            url(../../assets/images/Sierra/sierra-nevada-9.png);
         background-size: cover;
     }
 
     @include respond(tab-port) {
         background-image: linear-gradient(to right, rgba($color-white, .9)0%, rgba($color-white, .9)100%),
-            // url(../../img/nat-10.jpg)
-        ;
+            url(../../assets/images/Sierra/sierra-nevada-9.png);
         background-size: cover;
     }
 
@@ -37,7 +35,7 @@
         padding: 6rem;
 
         @include respond(tab-land) {
-            width: 65%;
+            width: 50;
         }
 
         @include respond(tab-port) {
@@ -51,6 +49,14 @@
 }
 
 .step-two {
+    display: none;
+}
+
+.step-three {
+    display: none;
+}
+
+.step-four {
     display: none;
 }
 
@@ -72,7 +78,7 @@
         border-radius: 2px;
         background-color: rgba($color-white, .5);
         border: none;
-        border-bottom: 3px solid trnasparent;
+        border-bottom: 3px solid transparent;
         width: 90%;
         display: block;
 
@@ -83,7 +89,7 @@
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;
+            border-bottom: 3px solid $color-tertiary-light;
 
             &:invalid {
                 border-bottom: 3px solid $color-secondary-dark;
@@ -109,5 +115,14 @@
         visibility: hidden;
         transform: translateY(-4rem);
     }
+
+    &__textarea {
+        height: 30vh;
+
+        &::placeholder {
+            position: absolute;
+        }
+    }
+
 
 }

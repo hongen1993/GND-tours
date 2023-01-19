@@ -13,15 +13,15 @@ function Navbar() {
   const listLink2 = 'section-features'
   const listLink3 = 'section-tours'
   const listLink4 = 'section-stories'
-  const listLink5 = 'section-stories'
-  const listLink6 = 'section-stories'
+  const listLink5 = 'section-book'
+  const listLink6 = '#'
 
   const listText1 = 'Home'
   const listText2 = 'About us'
   const listText3 = 'Tours'
   const listText4 = 'Stories'
-  const listText5 = 'Privacy policy'
-  const listText6 = 'Terms'
+  const listText5 = 'Book now'
+  const listText6 = 'Privacy policy'
 
   return (
     <nav>

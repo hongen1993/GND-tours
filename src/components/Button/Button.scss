@@ -81,4 +81,8 @@
             transform: translateY(0);
         }
     }
+
+    &__inactive {
+        display: none;
+    }
 }

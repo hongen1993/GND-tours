@@ -15,6 +15,10 @@
         transform: skewY(7deg);
     }
 
+    @include respond(tab-land) {
+        padding: 10rem 4rem;
+    }
+
     @include respond(tab-port) {
         padding: 10rem 0;
     }

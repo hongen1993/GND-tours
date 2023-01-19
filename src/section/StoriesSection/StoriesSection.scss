@@ -25,6 +25,11 @@
 
     @include respond(tab-port) {
         padding: 10rem 0;
+        height: 195vh;
+    }
+
+    @include respond(phone) {
+        height: 200vh;
     }
 }
 
@@ -38,6 +43,14 @@
     padding: .7rem;
     transition: all .2s;
     margin-top: 100vh;
+
+    @include respond(tab-port) {
+        margin-top: 147vh;
+    }
+
+    @include respond(phone) {
+        margin-top: 147vh;
+    }
 
     &:hover {
         background-color: $color-primary;

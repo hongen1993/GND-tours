@@ -5,6 +5,7 @@ import ToursSection from "../../section/ToursSection/ToursSection"
 import StoriesSection from "../../section/StoriesSection/StoriesSection"
 import BookSection from "../../section/BookSection/BookSection"
 import FooterSection from "../../section/FooterSection/FooterSection"
+import Terms from "../../components/Terms/Terms"
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         <BookSection />
       </main>
       <FooterSection />
+      <Terms />
     </>
   )
 }

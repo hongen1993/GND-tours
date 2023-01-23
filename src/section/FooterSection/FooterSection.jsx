@@ -23,10 +23,7 @@ const FooterSection = () => {
         <footer className="footer">
             <div className="footer__logo-box">
                 <picture className="footer_logo">
-                    {/* <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
-                        media="(max-width:37.5em)" /> */}
                     <img src={Logo} alt="Full logo" className="footer__img"
-                    // srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" 
                     />
                 </picture>
             </div>

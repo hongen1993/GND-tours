@@ -22,4 +22,12 @@
     @include respond(tab-port) {
         padding: 10rem 0;
     }
+
+    @include respond(phone) {
+        background-image: linear-gradient(to right top,
+                rgba($color-primary, 0.1),
+                rgba($color-primary-dark, 0.3)),
+            url(../../assets/images/Sierra/sierra-nevada-skew-sm.png);
+    }
+
 }

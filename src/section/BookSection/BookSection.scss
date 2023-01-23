@@ -30,6 +30,11 @@
         background-size: cover;
     }
 
+    @include respond(phone) {
+        background-image: linear-gradient(to right, rgba($color-white, .9)0%, rgba($color-white, .9)100%),
+            url(../../assets/images/Sierra/sierra-nevada-9-sm.png);
+    }
+
     &__form {
         width: 50%;
         padding: 6rem;

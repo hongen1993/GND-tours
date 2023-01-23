@@ -4,6 +4,9 @@ import { useState } from "react"
 import sierraNevadaVideo from "../../assets/images/Alhambra/alhambra-video.mp4"
 import sierraNevadaVideoB from "../../assets/images/Alhambra/alhambra-video.webm"
 
+import sierraNevadaVideo2 from "../../assets/images/Alhambra/alhambra-video-sm.mp4"
+import sierraNevadaVideoB2 from "../../assets/images/Alhambra/alhambra-video-sm.webm"
+
 import profile1 from "../../assets/images/Stories/profile-1.png"
 import profile2 from "../../assets/images/Stories/profile-2.jpg"
 import profile3 from "../../assets/images/Stories/profile-3.png"
@@ -60,8 +63,10 @@ const StoriesSection = () => {
         <section className="section-stories" id="section-stories">
             <div className="bg-video" >
                 <video className="bg-video__content" autoPlay muted loop >
-                    <source src={sierraNevadaVideo} type="video/mp4" />
-                    <source src={sierraNevadaVideoB} type="video/webm" />
+                    <source src={sierraNevadaVideo}
+                        srcset={`${sierraNevadaVideo2} 300w, ${sierraNevadaVideoB2} 800w`} type="video/mp4" />
+                    <source src={sierraNevadaVideoB}
+                        srcset={`${sierraNevadaVideoB2} 300w, ${sierraNevadaVideoB} 800w`} type="video/webm" />
                     Your browser is not supported!
                 </video >
             </div >

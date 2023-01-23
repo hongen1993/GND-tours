@@ -57,15 +57,27 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .7), rgba($color-secondary-dark, .7)), url(../../assets/images/Alhambra/alhambra-5.jpg)
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .7), rgba($color-secondary-dark, .7)), url(../../assets/images/Alhambra/alhambra-5.jpg);
+
+            @include respond(phone) {
+                background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .7), rgba($color-secondary-dark, .7)), url(../../assets/images/Alhambra/alhambra-5-sm.png);
+            }
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .7), rgba($color-tertiary-dark, .7)), url(../../assets/images/Bosque/bosque-2.JPG)
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .7), rgba($color-tertiary-dark, .7)), url(../../assets/images/Bosque/bosque-2.JPG);
+
+            @include respond(phone) {
+                background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .7), rgba($color-tertiary-dark, .7)), url(../../assets/images/Bosque/bosque-2-sm.png);
+            }
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary, .7), rgba($color-primary-dark, .7)), url(../../assets/images/Sierra/sierra-nevada-7.png)
+            background-image: linear-gradient(to right bottom, rgba($color-primary, .7), rgba($color-primary-dark, .7)), url(../../assets/images/Sierra/sierra-nevada-7.png);
+
+            @include respond(phone) {
+                background-image: linear-gradient(to right bottom, rgba($color-primary, .7), rgba($color-primary-dark, .7)), url(../../assets/images/Sierra/sierra-nevada-7-sm.png);
+            }
         }
 
     }

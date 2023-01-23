@@ -5,8 +5,14 @@ import Paragraph from "../../components/Paragraph/Paragraph"
 import Image from "../../components/Image/Image"
 
 import photoA from "../../assets/images/Bosque/bosque-1.jpeg"
+import photoA2 from "../../assets/images/Bosque/bosque-1-sm.png"
+
 import photoB from "../../assets/images/Alhambra/alhambra-3.jpg"
+import photoB2 from "../../assets/images/Alhambra/alhambra-3-sm.png"
+
 import photoC from "../../assets/images/Sierra/sierra-nevada-1.jpg"
+import photoC2 from "../../assets/images/Sierra/sierra-nevada-1-sm.png"
+
 
 const AboutTours = () => {
 
@@ -43,9 +49,9 @@ const AboutTours = () => {
                 </div>
                 <div className="col-1-of-2">
                     <div className="composition">
-                        <Image photo={photoA} srcsetImage={''} alt={imageAAlt} number={'1'} />
-                        <Image photo={photoB} srcsetImage={''} alt={imageBAlt} number={'2'} />
-                        <Image photo={photoC} srcsetImage={''} alt={imageCAlt} number={'3'} />
+                        <Image photo={photoA} srcsetImage={`${photoA2} 300w, ${photoA} 800w`} alt={imageAAlt} number={'1'} />
+                        <Image photo={photoB} srcsetImage={`${photoB2} 300w, ${photoB} 800w`} alt={imageBAlt} number={'2'} />
+                        <Image photo={photoC} srcsetImage={`${photoC2} 300w, ${photoC} 800w`} alt={imageCAlt} number={'3'} />
                     </div>
                 </div>
             </div>

@@ -82,4 +82,10 @@
             float: none;
         }
     }
+
+    &__img {
+        @include respond(tab-port) {
+            height: 7.5rem;
+        }
+    }
 }

@@ -18,10 +18,23 @@
         height: 95vh;
     }
 
+    @include respond(phone) {
+        @supports(clip-path:polygon(0 0)) or (-webkit-clip-path:polygon(0 0)) {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            height: 75vh;
+        }
+    }
+
     &__logo-box {
         position: absolute;
         top: 6rem;
         left: 6rem;
+
+        @include respond(tab-port) {
+            top: 3rem;
+            left: 3rem;
+        }
     }
 
     &__logo {
@@ -32,5 +45,9 @@
         position: absolute;
         @include center-vertical;
         text-align: center;
+
+        @include respond(tab-port) {
+            top: 40%;
+        }
     }
 }

@@ -19,15 +19,15 @@
         text-align: center;
         cursor: pointer;
 
-        // @include respond(tab-port) {
-        //         top: 4rem;
-        //         right: 4rem;
-        //     }
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
 
-        //     @include respond(phone) {
-        //         top: 3rem;
-        //         right: 3rem;
-        //     }
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__background {
@@ -40,15 +40,16 @@
         background-image: radial-gradient(#017cb9, #011f44);
         z-index: 1000;
         transition: transform .8s cubic-bezier(.86, 0, 0.7, 1);
-        // @include respond(tab-port) {
-        //         top: 4.5rem;
-        //         right: 4.5rem;
-        //     }
 
-        //     @include respond(phone) {
-        //         top: 3.5rem;
-        //         right: 3.5rem;
-        //     }
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond(phone) {
+            top: 4rem;
+            right: 4rem;
+        }
     }
 
     &__nav {
@@ -69,6 +70,10 @@
         list-style: none;
         text-align: center;
         width: 100%;
+
+        @include respond(phone) {
+            top: 40%;
+        }
     }
 
     &__item {

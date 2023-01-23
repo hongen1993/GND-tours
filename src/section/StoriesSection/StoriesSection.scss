@@ -29,7 +29,7 @@
     }
 
     @include respond(phone) {
-        height: 200vh;
+        height: 110vh;
     }
 }
 
@@ -49,7 +49,7 @@
     }
 
     @include respond(phone) {
-        margin-top: 147vh;
+        margin-top: 80vh;
     }
 
     &:hover {
